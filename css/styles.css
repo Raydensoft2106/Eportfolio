@@ -28,6 +28,45 @@ body {
   color: white;
 }
 
+.dropbtn {
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+padding: 14px 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn { background-color: #ddd;
+    color: black;}
+
+
 .main {
     display: flex;
 }
@@ -37,9 +76,9 @@ article {
   padding: 20px;
   width: 70%;
     margin: auto;
+    margin-top: 25px;
   background-color: #f1f1f1;
-  height: 300px;
-    
+      display: flex;
 }
 
 .avatar {
@@ -59,21 +98,59 @@ h2 {
         
 }
 
+
+.boxes {
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    background-color: white;
+    position: relative;
+}
+
+.innerBoxes {
+border: solid 1px black;
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+
 .leftbox {
     float:left; 
     background:Red;
     width:33%;
     height:280px;
+    position: relative;
+    z-index: 1;
 }
 .middlebox{
     float:left; 
     background:Green;
     width:34%;
     height:480px;
+    position: relative;
+    z-index: 1;
 }
 .rightbox{
     float:right;
     background:blue;
     width:33%;
     height:280px;
+    position: relative;
+    z-index: 1;
 }
+
+
+.hi {
+    width: 56px;
+    height: 74px;
+    position: relative;
+    z-index: 2;
+    margin-left: 40%;
+    margin-top: -30px
+}
+
+
+
+
+
+
